@@ -32,8 +32,8 @@ class QiuQiuGameObject {
 let last_timestamp;
 let QIUQIU_GAME_ANIMATION = function(timestamp) {
 
-    for (let i = 0; i < QIUQIU_GAME_OBJECT.length; i ++) {
-        let obj = QIUQIU_GAME_OBJECT[i];
+    for (let i = 0; i < QIUQIU_GAME_OBJECTS.length; i ++) {
+        let obj = QIUQIU_GAME_OBJECTS[i];
         if (!obj.has_called_start) {
             obj.start();
             obj.has_called_start = true;
