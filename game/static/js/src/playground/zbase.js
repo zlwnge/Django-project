@@ -1,10 +1,13 @@
 class QiuQiuGamePlayground {
     constructor(root) {
         this.root = root;
-        this.$playground = $('<div>游戏界面</div>');
+        this.$playground = $('<div class="qiuqiu-game-playground"></div>');
 
-        this.hide();
+        // this.hide();
         this.root.$qiuqiu_game.append(this.$playground);
+        this.width = this.$playground.width();
+        this.height = this.$playground.height();
+        this.game_map = new GameMap(this);
 
         this.start();
     }
