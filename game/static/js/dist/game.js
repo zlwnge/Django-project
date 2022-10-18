@@ -212,7 +212,7 @@ class Player extends QiuQiuGameObject {
     }
 
 }
-class FireBall extends AcGameObject {
+class FireBall extends QiuQiuGameObject {
     constructor(playground, player, x, y, radius, vx, vy, color, speed, move_length) {
         super();
         this.playground = playground;
@@ -252,6 +252,7 @@ class FireBall extends AcGameObject {
         this.ctx.fillStyle = this.color;
         this.ctx.fill();
     }
+}
 class QiuQiuGamePlayground {
     constructor(root) {
         this.root = root;
